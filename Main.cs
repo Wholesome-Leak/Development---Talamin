@@ -55,6 +55,7 @@ public class Main : IProduct {
                 _isStarted = false;
                 Logging.Status = "[WholesomeDungeons] Failed to start";
                 Logger.Log("Failed to start");
+
             }
         } catch (Exception e) {
             _isStarted = false;
