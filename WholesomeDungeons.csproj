@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{131719E3-8EF8-4DF2-A9A8-E84AB65C1DD8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WholesomeDungeons</RootNamespace>
+    <AssemblyName>WholesomeDungeons</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Zer0|AnyCPU'">
+    <OutputPath>F:\WoW\WoW Wotlk\WRobot WOTLK\Products\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Talamin|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ControlzEx, Version=3.0.2.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\ControlzEx.3.0.2.4\lib\net462\ControlzEx.dll</HintPath>
+    </Reference>
+    <Reference Include="DatabaseManager">
+      <HintPath>..\..\..\Videos\Dep\DatabaseManager.dll</HintPath>
+    </Reference>
+    <Reference Include="MahApps.Metro, Version=1.6.5.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MahApps.Metro.1.6.5\lib\net47\MahApps.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="MemoryRobot">
+      <HintPath>..\..\..\Videos\Dep\MemoryRobot.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Xaml.Behaviors.Wpf.1.1.19\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="RDManaged">
+      <HintPath>..\..\..\Videos\Dep\RDManaged.dll</HintPath>
+    </Reference>
+    <Reference Include="robotManager">
+      <HintPath>..\..\..\Videos\Dep\robotManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.115.5, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\ControlzEx.3.0.2.4\lib\net462\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="wManager">
+      <HintPath>..\..\..\Videos\Dep\wManager.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bot\Settings.cs" />
+    <Compile Include="Bot\WholesomeDungeons.cs" />
+    <Compile Include="Connection\Client.cs" />
+    <Compile Include="Connection\Data\TankData.cs" />
+    <Compile Include="Connection\Enums.cs" />
+    <Compile Include="Connection\Request.cs" />
+    <Compile Include="Connection\Server.cs" />
+    <Compile Include="DungeonLogic\Profile.cs" />
+    <Compile Include="DungeonLogic\Step.cs" />
+    <Compile Include="DungeonLogic\LogicRunner.cs" />
+    <Compile Include="GUI\UserControl1.xaml.cs">
+      <DependentUpon>UserControl1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UserControl2.xaml.cs">
+      <DependentUpon>UserControl2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\AoEAvoider.cs" />
+    <Compile Include="Helper\Blacklist.cs" />
+    <Compile Include="Helper\BundledOffmesh.cs" />
+    <Compile Include="Helper\DynamicObject.cs" />
+    <Compile Include="Helper\Eventhandler.cs" />
+    <Compile Include="Helper\Helpers.cs" />
+    <Compile Include="Helper\Lists.cs" />
+    <Compile Include="Helper\Logger.cs" />
+    <Compile Include="Helper\Variables.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Profiles\Base\DefendSpot.cs" />
+    <Compile Include="Profiles\Base\Execute.cs" />
+    <Compile Include="Profiles\Base\FollowUnit.cs" />
+    <Compile Include="Profiles\Base\JumpTo.cs" />
+    <Compile Include="Profiles\Base\PickupObject.cs" />
+    <Compile Include="Profiles\Base\InteractWith.cs" />
+    <Compile Include="Profiles\Base\WaitUntil.cs" />
+    <Compile Include="Profiles\Classic\BlackfathomDeeps\BlackfathomDeeps.cs" />
+    <Compile Include="Profiles\Classic\BlackfathomDeeps\Data.cs" />
+    <Compile Include="Profiles\Classic\BlackrockDepthsPrison\BlackrockKDepthsPrison.cs" />
+    <Compile Include="Profiles\Classic\BlackrockDepthsPrison\Data.cs" />
+    <Compile Include="Profiles\Classic\BlackrockSpire\Data.cs" />
+    <Compile Include="Profiles\Classic\BlackrockSpire\BlackrockSpire.cs" />
+    <Compile Include="Profiles\Classic\BlackrockUpperCity\Data.cs" />
+    <Compile Include="Profiles\Classic\BlackrockUpperCity\BlackrockUpperCity.cs" />
+    <Compile Include="Profiles\Classic\DireMaulEast\Data.cs" />
+    <Compile Include="Profiles\Classic\DireMaulEast\DireMaulEast.cs" />
+    <Compile Include="Profiles\Classic\DireMaulNorth\Data.cs" />
+    <Compile Include="Profiles\Classic\DireMaulNorth\DireMaulNorth.cs" />
+    <Compile Include="Profiles\Classic\DireMaulWest\Data.cs" />
+    <Compile Include="Profiles\Classic\DireMaulWest\DireMaulWest.cs" />
+    <Compile Include="Profiles\Classic\Gnomregan\Data.cs" />
+    <Compile Include="Profiles\Classic\Gnomregan\Gnomregan.cs" />
+    <Compile Include="Profiles\Classic\MaraudonEarthSongFalls\Data.cs" />
+    <Compile Include="Profiles\Classic\MaraudonEarthSongFalls\MaraudonEarthSongFalls.cs" />
+    <Compile Include="Profiles\Classic\MaraudonFoulsporeCavern\Data.cs" />
+    <Compile Include="Profiles\Classic\MaraudonFoulsporeCavern\MaraudonFoulsporeCavern.cs" />
+    <Compile Include="Profiles\Classic\MaraudonTheWickedGrotto\Data.cs" />
+    <Compile Include="Profiles\Classic\MaraudonTheWickedGrotto\MaraudonTheWickedGrotto.cs" />
+    <Compile Include="Profiles\Classic\RagefireChasm\Data.cs" />
+    <Compile Include="Profiles\Classic\RagefireChasm\RagefireChasm.cs" />
+    <Compile Include="Profiles\Classic\RazorfenDowns\Data.cs" />
+    <Compile Include="Profiles\Classic\RazorfenDowns\RazorfenDowns.cs" />
+    <Compile Include="Profiles\Classic\RazorfenKraul\Data.cs" />
+    <Compile Include="Profiles\Classic\RazorfenKraul\RazorfenKraul.cs" />
+    <Compile Include="Profiles\Classic\ScarletArmory\Data.cs" />
+    <Compile Include="Profiles\Classic\ScarletArmory\ScarletArmory.cs" />
+    <Compile Include="Profiles\Classic\ScarletCathedral\Data.cs" />
+    <Compile Include="Profiles\Classic\ScarletCathedral\ScarletCathedral.cs" />
+    <Compile Include="Profiles\Classic\ScarletGraveyard\Data.cs" />
+    <Compile Include="Profiles\Classic\ScarletGraveyard\ScarletGraveyard.cs" />
+    <Compile Include="Profiles\Classic\ScarletLibrary\Data.cs" />
+    <Compile Include="Profiles\Classic\ScarletLibrary\ScarletLibrary.cs" />
+    <Compile Include="Profiles\Classic\Scholomance\Data.cs" />
+    <Compile Include="Profiles\Classic\Scholomance\Scholomance.cs" />
+    <Compile Include="Profiles\Classic\SethekkHalls\Data.cs" />
+    <Compile Include="Profiles\Classic\SethekkHalls\SethekkHalls.cs" />
+    <Compile Include="Profiles\Classic\ShadowfangKeep\Data.cs" />
+    <Compile Include="Profiles\Classic\ShadowfangKeep\ShadowfangKeep.cs" />
+    <Compile Include="Profiles\Classic\StormwindStockade\Data.cs" />
+    <Compile Include="Profiles\Classic\StormwindStockade\StormwindStockade.cs" />
+    <Compile Include="Profiles\Classic\TheDeadmines\Data.cs" />
+    <Compile Include="Profiles\Classic\TheDeadmines\TheDeadmines.cs" />
+    <Compile Include="Profiles\Classic\TheTempleOfAtalHakkar\Data.cs" />
+    <Compile Include="Profiles\Classic\TheTempleOfAtalHakkar\TheTempleOfAtalHakkar.cs" />
+    <Compile Include="Profiles\Classic\Uldaman2\Data.cs" />
+    <Compile Include="Profiles\Classic\Uldaman2\Uldaman2.cs" />
+    <Compile Include="Profiles\Classic\Uldaman\Data.cs" />
+    <Compile Include="Profiles\Classic\Uldaman\Uldaman.cs" />
+    <Compile Include="Profiles\Classic\WailingCaverns\Data.cs" />
+    <Compile Include="Profiles\Classic\WailingCaverns\WailingCaverns.cs" />
+    <Compile Include="Profiles\Classic\ZulFarrak\Data.cs" />
+    <Compile Include="Profiles\Classic\ZulFarrak\ZulFarrak.cs" />
+    <Compile Include="Profiles\Classic\_Example\Data.cs" />
+    <Compile Include="Profiles\Classic\_Example\Example.cs" />
+    <Compile Include="Profiles\WotLK\ForgeOfSouls\ForgeOfSouls.cs" />
+    <Compile Include="Profiles\Base\MoveToUnit.cs" />
+    <Compile Include="Profiles\Base\MoveAlongPath.cs" />
+    <Compile Include="Profiles\Base\GoTo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="States\FollowNEW.cs" />
+    <Compile Include="States\DungeonLogic.cs" />
+    <Compile Include="States\Follow.cs" />
+    <Compile Include="States\Invite.cs" />
+    <Compile Include="States\LeaveDungeon.cs" />
+    <Compile Include="States\Loot.cs" />
+    <Compile Include="States\NothingToDo.cs" />
+    <Compile Include="States\OpenSatchels.cs" />
+    <Compile Include="States\PrioTarget.cs" />
+    <Compile Include="States\Queue.cs" />
+    <Compile Include="States\Ressurection.cs" />
+    <Compile Include="States\Rest.cs" />
+    <Compile Include="States\ReviveParty.cs" />
+    <Compile Include="States\Targeting.cs" />
+    <Compile Include="States\PortAfterDeath.cs" />
+    <Compile Include="States\DefendAll.cs" />
+    <Compile Include="States\TargetingNEW.cs" />
+    <Compile Include="States\Wait.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="GUI\UserControl1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\UserControl2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dependencies\*" />
+    <Content Include="GUI\Wholesome.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dependencies\" />
+    <Folder Include="Profiles\BC\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <Import Project="packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.115.5\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+  </Target>
+</Project>

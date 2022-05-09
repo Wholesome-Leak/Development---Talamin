@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="WholesomeDungeons.GUI.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WholesomeDungeons.GUI"
+             mc:Ignorable="d" d:DesignWidth="800" Height="530">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <DockPanel HorizontalAlignment="Left" Height="520" LastChildFill="False" VerticalAlignment="Top" Width="36" Background="#FFC4C6CD"/>
+        <DockPanel HorizontalAlignment="Left" Height="35" LastChildFill="False" Margin="36,0,0,0" VerticalAlignment="Top" Width="754" Background="#FFC4C6CD"/>
+        <Label x:Name="Wholesome_Label" Content="Wholesome Dungeons" HorizontalAlignment="Left" Margin="308,0,0,0" VerticalAlignment="Top" FontFamily="PMingLiU-ExtB" Height="42" Width="197" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="GroupAddMember" Content="Add  Member" HorizontalAlignment="Left" Margin="51,67,0,0" VerticalAlignment="Top" Width="94" Click="Button_Click" Background="#FFDDDDDD" ClickMode="Press"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="263" Margin="41,42,0,0" VerticalAlignment="Top" Width="305" Panel.ZIndex="-1">
+            <Button x:Name="GroupRemoveAll" Content="Remove all" Margin="0,171,200,0" Click="Button_Click_1" Background="#FFDDDDDD" ClickMode="Press" HorizontalAlignment="Right" Width="94" Height="26" VerticalAlignment="Top"/>
+        </Border>
+        <TextBox x:Name="NewMembersAdd" HorizontalAlignment="Left" Height="23" Margin="160,67,0,0" TextWrapping="Wrap" Text="Membername" VerticalAlignment="Top" Width="120" Background="#FFF5D0D0" TextChanged="NewMembersAdd_TextChanged"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="148" Margin="355,42,0,0" VerticalAlignment="Top" Width="165"/>
+        <Label Content="Group Selection" HorizontalAlignment="Left" Margin="246,40,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Role  Selection" HorizontalAlignment="Left" Margin="432,40,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="TankRoleCheck" Content="Tank" HorizontalAlignment="Left" Margin="364,67,0,0" VerticalAlignment="Top" MouseLeave="TankRoleCheck_Checked"/>
+        <CheckBox x:Name="HealRoleChecl" Content="Heal" HorizontalAlignment="Left" Margin="364,95,0,0" VerticalAlignment="Top" MouseLeave="HealRoleChecl_Checked"/>
+        <CheckBox x:Name="RDPSRoleCheck" Content="RDPS" HorizontalAlignment="Left" Margin="364,125,0,0" VerticalAlignment="Top" MouseLeave="RDPSRoleCheck_Checked"/>
+        <CheckBox x:Name="MDPSRoleCheck" Content="MDPS" HorizontalAlignment="Left" Margin="364,150,0,0" VerticalAlignment="Top" MouseLeave="MDPSRoleCheck_Checked"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="119" Margin="41,332,0,0" VerticalAlignment="Top" Width="143"/>
+        <CheckBox x:Name="LootModeBosses" Content="Bosses" HorizontalAlignment="Left" Margin="51,359,0,0" VerticalAlignment="Top" MouseLeave="LootModeBosses_Checked"/>
+        <CheckBox x:Name="LootModeTrash" Content="Trash" HorizontalAlignment="Left" Margin="51,379,0,0" VerticalAlignment="Top" MouseLeave="LootModeTrash_Checked"/>
+        <Label Content="Lootmode" HorizontalAlignment="Left" Margin="120,329,0,0" VerticalAlignment="Top"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="119" Margin="200,332,0,0" VerticalAlignment="Top" Width="320"/>
+        <Label Content="Misc" HorizontalAlignment="Left" Margin="480,329,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="FollowDistanceRDPS" HorizontalAlignment="Left" Height="23" Margin="346,344,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="39" TextChanged="TextBox_TextChanged_1" Background="#FFF5D0D0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="215,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115"><Run Text="Follow Distance"/><Run Text=" "/><Run Text="R"/><Run Text="DPS"/></TextBlock>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="150" Margin="530,40,0,0" VerticalAlignment="Top" Width="260"/>
+        <Label x:Name="Dungeon" Content="Dungeon" HorizontalAlignment="Left" Margin="720,35,0,0" VerticalAlignment="Top" Width="59"/>
+        <ComboBox HorizontalAlignment="Left" Margin="550,125,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FFF5D0D0" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+        </ComboBox>
+        <CheckBox x:Name="ChooseSpecificDungeon" Content="ChooseSpecificDungeon" HorizontalAlignment="Left" Margin="550,98,0,0" VerticalAlignment="Top" Width="165" Checked="ChooseSpecificDungeon_Checked"/>
+        <CheckBox x:Name="ChooseRandomDungeon" Content="ChooseRandomDungeon" HorizontalAlignment="Left" Margin="550,72,0,0" VerticalAlignment="Top" Width="155" Checked="ChooseRandomDungeon_Checked"/>
+        <ListView x:Name="MembersList" HorizontalAlignment="Left" Margin="160,127,0,0" VerticalAlignment="Top" SelectionChanged="ListView_SelectionChanged" FontSize="10" Height="168">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="GroupAddTank" Content="Add  Tank" HorizontalAlignment="Left" Margin="51,101,0,0" VerticalAlignment="Top" Width="94" Click="Button_Click_2" ClickMode="Press"/>
+        <TextBox x:Name="NewTankAdd" HorizontalAlignment="Left" Height="23" Margin="160,99,0,0" TextWrapping="Wrap" Text="Tankname" VerticalAlignment="Top" Width="120" Background="#FFF5D0D0" TextChanged="NewTankAdd_TextChanged"/>
+        <Button x:Name="SAVE" Content="SAVE" HorizontalAlignment="Left" Margin="41,475,0,0" VerticalAlignment="Top" Width="143" Height="35" ClickMode="Press" Click="SAVE_Click"/>
+        <Button x:Name="RemoveSelected" Content="Remove Select" HorizontalAlignment="Left" Margin="51,172,0,0" VerticalAlignment="Top" Width="94" Height="25" ClickMode="Press" Click="RemoveSelected_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="215,415,0,0" TextWrapping="Wrap" Text="Follow Distance Heal" VerticalAlignment="Top" Width="131"/>
+        <TextBox x:Name="FollowDistanceHeal" HorizontalAlignment="Left" Height="23" Margin="346,413,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="39" Background="#FFF5D0D0" TextChanged="FollowDistanceHeal_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="215,379,0,0" TextWrapping="Wrap" Text="Follow Distance MDPS" VerticalAlignment="Top"/>
+        <TextBox x:Name="FollowDistanceMDPS" HorizontalAlignment="Left" Height="23" Margin="346,379,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="39" Background="#FFF5D0D0" TextChanged="TextBox_TextChanged"/>
+        <Image HorizontalAlignment="Left" Height="42" VerticalAlignment="Top" Width="36" Source="Wholesome.jpg"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="119" Margin="530,332,0,0" VerticalAlignment="Top" Width="260"/>
+        <Label Content="Develop" HorizontalAlignment="Left" Margin="714,329,0,0" VerticalAlignment="Top" Width="75"/>
+        <CheckBox x:Name="ServerClient" Content="Use Server/Client" HorizontalAlignment="Left" Margin="541,359,0,0" VerticalAlignment="Top" Width="150" MouseLeave="ServerClient_Checked" Checked="ServerClient_Checked"/>
+        <CheckBox x:Name="SmoothMove" Content="Use SmoothMove Beta" HorizontalAlignment="Left" Margin="540,387,0,0" VerticalAlignment="Top" Width="150" MouseLeave="SmoothMove_Checked" Checked="SmoothMove_Checked"/>
+    </Grid>
+</UserControl>

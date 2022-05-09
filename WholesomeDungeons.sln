@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WholesomeDungeons", "WholesomeDungeons.csproj", "{131719E3-8EF8-4DF2-A9A8-E84AB65C1DD8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Talamin|Any CPU = Talamin|Any CPU
+		Zer0|Any CPU = Zer0|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{131719E3-8EF8-4DF2-A9A8-E84AB65C1DD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{131719E3-8EF8-4DF2-A9A8-E84AB65C1DD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{131719E3-8EF8-4DF2-A9A8-E84AB65C1DD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{131719E3-8EF8-4DF2-A9A8-E84AB65C1DD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{131719E3-8EF8-4DF2-A9A8-E84AB65C1DD8}.Talamin|Any CPU.ActiveCfg = Talamin|Any CPU
+		{131719E3-8EF8-4DF2-A9A8-E84AB65C1DD8}.Talamin|Any CPU.Build.0 = Talamin|Any CPU
+		{131719E3-8EF8-4DF2-A9A8-E84AB65C1DD8}.Zer0|Any CPU.ActiveCfg = Zer0|Any CPU
+		{131719E3-8EF8-4DF2-A9A8-E84AB65C1DD8}.Zer0|Any CPU.Build.0 = Zer0|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91775F09-8B59-41AC-8B31-656846EFCC53}
+	EndGlobalSection
+EndGlobal
